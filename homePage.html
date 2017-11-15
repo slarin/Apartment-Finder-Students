@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Page</title>
+<link rel="stylesheet" href="homePage/homePage.css">
+
+</head>
+
+<body>
+
+<div id="indexPage">
+
+<div id="header">
+
+</div>
+
+
+<div id="guarantee" class="parallax">
+<p>
+<em>Find your perfect apartment in four easy steps:</em></br>
+</p>
+<li>
+<ol>Choose to start your search by School OR by Area.</ol>
+<ol>Select your school's name OR an area name.</ol>
+<ol>Select the type of apartment you want.</ol>
+<ol>Select the highest price you're willing to pay.</ol>
+</li>
+<p>
+<em>That's it!</em></br>
+</p>
+</div>
+
+<div id="nameOfSchool">
+<input type="button" onClick="document.getElementById('schoolBox').style.display='block'" class="searchSchool" value="School" id="schoolButton">
+</div>
+
+
+<div id="areaBenin">
+<input type="button" class="searchArea" value="Area" id="areaButton" onClick="document.getElementById('areaBox').style.display='block'">
+</div>
+
+<!-- School Search Modal -->
+<div id="schoolBox" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('schoolBox').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Search by School</h1>
+    </div>
+    <div class="w3-container">
+      
+      <form action="resultsPage/finalresultsHolder.html" method="post">
+      <h4>Select a School from the options below:</h4>
+        <p><select name= "cont" class="w3-select w3-padding-16 w3-border" required>
+           <option value=""></option>
+		   <option value="esae">ESAE UNIVERSITY</option>
+ 		   <option value="northA">NORTH AMERICAN UNIVERSITY</option>
+ 		   <option value="espamF">ESPAM FORMATION UNVERSITY</option>
+ 		   <option value="hillCity">HILL CITY UNIVERSITY</option>
+		   </select>
+         </p>
+      <h4>Select type of Apartment you want:</h4>
+      	<p><select name="apmt" class="w3-select w3-padding-16 w3-border" required>
+           <option value=""></option>
+		   <option value="singleRoomSelfCont">Single Room Self-Contained</option>
+ 		   <option value="twoBedroomFlat">Two-Bedroom Flat</option>
+ 		   <option value="threeBedroomFlat">Three-Bedroom Flat</option>
+ 		   <option value="fourBedroomFlat">Four-Bedroom Flat</option>
+		   </select>
+         </p>
+	  <h4>Select the highest price you want to pay for the apartment:</h4>
+        <p><em>Apartment prices are per month, current exchange rate is 1000 naira to 1500 cfa.</em></p>
+      	<p><select name= "prc" class="w3-select w3-padding-16 w3-border" required>
+           <option value=""></option>
+		   <option value="15000">15,000 CFA</option>
+ 		   <option value="20000">20,000 CFA</option>
+ 		   <option value="25000">25,000 CFA</option>
+ 		   <option value="30000">30,000 CFA</option>
+           <option value="35000">35,000 CFA</option>
+           <option value="40000">40,000 CFA</option>
+           <option value="45000">45,000 CFA</option>
+           <option value="50000">50,000 CFA</option>
+           <option value="50001">Over 50,000 CFA</option>
+		   </select>
+         </p>
+        <p><button class="w3-button" type="submit">FIND APARTMENT</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Area Search Modal --> 
+<div id="areaBox" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('areaBox').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Search by Area</h1>
+    </div>
+    <div class="w3-container">
+    <form action="resultsPage/finalresultsHolder.html" method="post">
+      <h4>Select an Area from the options below:</h4>
+        <p><select name= "cont" class="w3-select w3-padding-16 w3-border" required>
+		   <optgroup label="Cotonou">
+           <option value=""></option>
+           <option value="akpakpa">Akpakpa</option>
+ 		   <option value="lomnava">LomNava</option>
+ 		   <option value="africando">Africando</option>
+ 		   <option value="danTokpa">DanTokpa</option>
+           </optgroup>
+		   </select>
+         </p>
+      <h4>Select type of Apartment you want:</h4>
+      	<p><select name="apmt" class="w3-select w3-padding-16 w3-border" required>
+           <option value=""></option>
+		   <option value="singleRoomSelfCont">Single Room Self-Contained</option>
+ 		   <option value="twoBedroomFlat">Two-Bedroom Flat</option>
+ 		   <option value="threeBedroomFlat">Three-Bedroom Flat</option>
+ 		   <option value="fourBedroomFlat">Four-Bedroom Flat</option>
+		   </select>
+         </p>
+	  <h4>Select the highest price you want to pay for the apartment:</h4>
+        <p><em>Apartment prices are per month, current exchange rate is 1000 naira to 1500 cfa.</em></p>
+      	<p><select name= "prc" class="w3-select w3-padding-16 w3-border" required>
+           <option value=""></option>
+		   <option value="15000">15,000 CFA</option>
+ 		   <option value="20000">20,000 CFA</option>
+ 		   <option value="25000">25,000 CFA</option>
+ 		   <option value="30000">30,000 CFA</option>
+           <option value="35000">35,000 CFA</option>
+           <option value="40000">40,000 CFA</option>
+           <option value="45000">45,000 CFA</option>
+           <option value="50000">50,000 CFA</option>
+           <option value="50001">Over 50,000 CFA</option>
+		   </select>
+         </p>
+        <p><button class="w3-button" type="submit">FIND APARTMENT</button></p>
+      </form>
+    </div>
+    
+    </div>
+  </div>
+
+
+</div>
+<script src="homePage.js"></script>
+</body>
+</html>
