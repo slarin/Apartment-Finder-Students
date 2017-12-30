@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-background-image:url(../images/aurelien-bellanger-3970unsplash.com.jpg);
+background-image:url(../images/diana-feil-245955.jpg);
 min-height: 100%;
 background-position: center;
 background-size:cover;
@@ -9,7 +9,7 @@ background-size:cover;
 h1,h2,h3,h4,h5,h6{
 	font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
 h3{
-	color:#F9F9F9;}
+	color:#030303;}
 
 #indexPage{
 	margin: 0% 12% 0% 12%;	
